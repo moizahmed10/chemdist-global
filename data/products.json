@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "EVA Hot Melt Adhesive",
+    "category": "Hot Melt Adhesives",
+    "cas": "24937-78-8",
+    "application": "PACKAGING",
+    "stock": "IN STOCK",
+    "description": "Excellent bonding strength for packaging applications with fast setting time and superior adhesion to various substrates.",
+    "packaging": "25kg Bag, 1000kg IBC",
+    "fullDescription": "EVA (Ethylene Vinyl Acetate) Hot Melt Adhesive offers outstanding performance in high-speed packaging lines. This thermoplastic adhesive provides excellent initial tack, fast setting speed, and strong bond strength across a wide temperature range. Ideal for carton sealing, case and tray forming, and general packaging applications.",
+    "specifications": {
+      "softening_point": "85-95°C",
+      "viscosity": "2000-4000 cps @ 150°C",
+      "color": "Light Yellow",
+      "open_time": "8-12 seconds"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Pressure Sensitive Adhesive",
+    "category": "Hot Melt Adhesives",
+    "cas": "9003-01-4",
+    "application": "FOOD INDUSTRY",
+    "stock": "7 DAY LEAD",
+    "description": "FDA compliant adhesive for food packaging with excellent tack and peel strength.",
+    "packaging": "20kg Drum, 200kg Drum",
+    "fullDescription": "Premium pressure sensitive adhesive designed specifically for food contact applications. Meets FDA 21 CFR 175.105 requirements for indirect food contact. Provides permanent bonding with excellent resistance to moisture and temperature variations.",
+    "specifications": {
+      "tack": "High",
+      "peel_adhesion": "12-15 N/25mm",
+      "service_temperature": "-20°C to +70°C",
+      "compliance": "FDA 21 CFR 175.105"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Alkyd Resin - Short Oil",
+    "category": "Saturated Resins",
+    "cas": "63148-69-6",
+    "application": "COATINGS",
+    "stock": "IN STOCK",
+    "description": "Superior gloss and flexibility for industrial coatings with excellent drying properties.",
+    "packaging": "200L Drum, IBC",
+    "fullDescription": "Short oil alkyd resin optimized for industrial coating applications. Provides excellent gloss retention, fast drying times, and superior hardness. Ideal for metal decorative coatings, automotive primers, and general industrial finishes.",
+    "specifications": {
+      "oil_length": "35-40%",
+      "solid_content": "60-65%",
+      "viscosity": "W-Z (Gardner-Holdt)",
+      "acid_value": "8-12 mg KOH/g"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Polyester Resin",
+    "category": "Saturated Resins",
+    "cas": "25038-59-9",
+    "application": "COATINGS",
+    "stock": "IN STOCK",
+    "description": "Excellent chemical and weather resistance for powder coatings and liquid finishes.",
+    "packaging": "180kg Drum, IBC",
+    "fullDescription": "High-performance saturated polyester resin designed for demanding coating applications. Offers outstanding chemical resistance, weather durability, and mechanical properties. Perfect for powder coatings, coil coatings, and high-durability architectural finishes.",
+    "specifications": {
+      "hydroxyl_value": "25-35 mg KOH/g",
+      "acid_value": "< 5 mg KOH/g",
+      "tg": "55-60°C",
+      "viscosity": "3000-5000 cps @ 200°C"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Titanium Dioxide Pigment",
+    "category": "Industrial Pigments",
+    "cas": "13463-67-7",
+    "application": "COATINGS",
+    "stock": "BACKORDER",
+    "description": "High opacity white pigment for paints and coatings with excellent hiding power.",
+    "packaging": "25kg Bag, 1000kg Super Sack",
+    "fullDescription": "Premium grade rutile titanium dioxide pigment offering superior opacity, brightness, and tinting strength. Treated for optimal dispersion and durability in various coating systems. Industry-standard choice for architectural and industrial paints.",
+    "specifications": {
+      "tio2_content": "≥ 94%",
+      "rutile_content": "≥ 98%",
+      "oil_absorption": "15-20 g/100g",
+      "brightness": "≥ 97%"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Iron Oxide Red",
+    "category": "Industrial Pigments",
+    "cas": "1309-37-1",
+    "application": "PLASTICS",
+    "stock": "IN STOCK",
+    "description": "Excellent color strength and light stability for plastics and coatings applications.",
+    "packaging": "25kg Bag, 500kg Bag",
+    "fullDescription": "Synthetic iron oxide red pigment with excellent heat stability and color consistency. Ideal for coloring plastics, rubber, and construction materials. Offers outstanding weather resistance and chemical inertness.",
+    "specifications": {
+      "fe2o3_content": "≥ 96%",
+      "color_shade": "Red 130",
+      "tinting_strength": "95-105%",
+      "oil_absorption": "20-30 g/100g"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Packaging Grade Hot Melt",
+    "category": "Hot Melt Adhesives",
+    "cas": "9010-77-9",
+    "application": "PACKAGING",
+    "stock": "IN STOCK",
+    "description": "Fast setting adhesive for high-speed lines with excellent substrate adhesion.",
+    "packaging": "25kg Block, Pellets",
+    "fullDescription": "Specifically formulated for high-speed packaging operations. This hot melt adhesive provides instant grab, fast set time, and reliable performance across various substrates including corrugated, paperboard, and plastics.",
+    "specifications": {
+      "softening_point": "80-90°C",
+      "application_temp": "150-170°C",
+      "set_time": "< 5 seconds",
+      "viscosity": "1500-2500 cps @ 160°C"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Acrylic Resin Solution",
+    "category": "Saturated Resins",
+    "cas": "9003-01-4",
+    "application": "COATINGS",
+    "stock": "IN STOCK",
+    "description": "Good adhesion and clarity for decorative coatings with UV resistance.",
+    "packaging": "200L Drum",
+    "fullDescription": "Thermoplastic acrylic resin solution providing excellent clarity, adhesion, and UV resistance. Ideal for automotive clear coats, wood finishes, and decorative applications requiring high gloss and durability.",
+    "specifications": {
+      "solid_content": "45-50%",
+      "viscosity": "2000-4000 cps",
+      "solvent": "Xylene/Butyl Acetate",
+      "tg": "100-105°C"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Carbon Black Pigment",
+    "category": "Industrial Pigments",
+    "cas": "1333-86-4",
+    "application": "PLASTICS",
+    "stock": "IN STOCK",
+    "description": "High tinting strength for plastics and coatings with excellent UV protection.",
+    "packaging": "15kg Bag, 400kg Pallet",
+    "fullDescription": "High-performance carbon black pigment offering superior jetness, tinting strength, and UV protection. Essential for automotive plastics, cables, and outdoor applications requiring weather resistance.",
+    "specifications": {
+      "particle_size": "18-22 nm",
+      "iodine_number": "40-50 mg/g",
+      "tinting_strength": "100-105%",
+      "volatile_content": "< 1.5%"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Label Adhesive PSA",
+    "category": "Hot Melt Adhesives",
+    "cas": "9010-88-2",
+    "application": "PACKAGING",
+    "stock": "7 DAY LEAD",
+    "description": "Permanent adhesive for labels and tapes with excellent aging resistance.",
+    "packaging": "20kg Pail, 180kg Drum",
+    "fullDescription": "Pressure sensitive adhesive specifically designed for label applications. Provides permanent bonding with excellent aging resistance and performance across various label stocks and application temperatures.",
+    "specifications": {
+      "tack": "Very High",
+      "peel_adhesion": "15-18 N/25mm",
+      "shear_resistance": "> 10,000 minutes",
+      "application_temp": "Room temperature"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Epoxy Resin",
+    "category": "Saturated Resins",
+    "cas": "25068-38-6",
+    "application": "COATINGS",
+    "stock": "IN STOCK",
+    "description": "Excellent adhesion for industrial applications with superior chemical resistance.",
+    "packaging": "25kg Pail, 200kg Drum",
+    "fullDescription": "Two-component epoxy resin system offering exceptional adhesion, chemical resistance, and mechanical properties. Ideal for industrial floor coatings, protective coatings, and high-performance applications.",
+    "specifications": {
+      "epoxy_equiv": "185-195 g/eq",
+      "viscosity": "11,000-14,000 cps @ 25°C",
+      "color": "Clear to Light Yellow",
+      "mixing_ratio": "2:1 by weight"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Phthalocyanine Blue",
+    "category": "Industrial Pigments",
+    "cas": "147-14-8",
+    "application": "COATINGS",
+    "stock": "IN STOCK",
+    "description": "Brilliant blue pigment with excellent fastness properties and color strength.",
+    "packaging": "25kg Drum",
+    "fullDescription": "Organic blue pigment offering brilliant shade, high tinting strength, and excellent light and weather fastness. Widely used in automotive coatings, printing inks, and plastics coloration.",
+    "specifications": {
+      "pigment_content": "≥ 98%",
+      "color_shade": "Blue 15:3",
+      "tinting_strength": "95-105%",
+      "light_fastness": "7-8 (Blue Wool Scale)"
+    }
+  }
+]

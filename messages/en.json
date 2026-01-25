@@ -1,0 +1,574 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalog": "Product Catalog",
+    "quote": "Request Quote",
+    "company": "Company Info",
+    "contact": "Contact",
+    "careers": "Careers",
+    "shipping": "Shipping & Logistics"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Chemical Distribution",
+      "subtitle": "Your trusted partner for industrial chemicals, adhesives, resins, and specialty coatings worldwide",
+      "cta": "Browse Products",
+      "requestQuote": "Request a Quote"
+    },
+    "search": {
+      "placeholder": "Search adhesives, resins, pigments...",
+      "sds": "SDS Request",
+      "tracking": "Order Tracking",
+      "compliance": "Compliance Docs"
+    },
+    "industries": {
+      "title": "Industries We Serve",
+      "subtitle": "Specialized adhesive, resin, and pigment solutions for key industries.",
+      "packaging": {
+        "badge": "Food Safe",
+        "title": "Packaging & Food Processing",
+        "description": "High-performance hot melt adhesives for cartons, labels, and tapes with fast setting times."
+      },
+      "coatings": {
+        "badge": "High Performance",
+        "title": "Paints & Coatings",
+        "description": "Saturated resins for superior gloss, adhesion, and weather resistance in coatings."
+      },
+      "plastics": {
+        "badge": "Colorfast",
+        "title": "Plastics & Polymers",
+        "description": "High-quality pigments with excellent color strength and heat stability for polymers."
+      },
+      "manufacturing": {
+        "badge": "Industrial",
+        "title": "Industrial Manufacturing",
+        "description": "Specialized chemical solutions for assembly, production lines, and heavy-duty applications."
+      }
+    },
+    "logistics": {
+      "title": "Global Logistics & Compliance",
+      "subtitle": "We don't just deliver chemicals; we manage the complex intersection of global logistics, safety regulations, and supply chain continuity.",
+      "temperature": {
+        "title": "Temperature-Controlled",
+        "description": "State-of-the-art cold chain management for sensitive reagents."
+      },
+      "hubs": {
+        "title": "Strategic Hubs",
+        "description": "Distribution centers in 12 major international ports for faster transit."
+      },
+      "regulatory": {
+        "title": "Regulatory Expertise",
+        "description": "Full REACH, OSHA, and ISO 9001:2015 documentation management."
+      },
+      "network": "Live Network Tracking",
+      "onTime": "On-Time Delivery",
+      "skus": "SKUs in Stock"
+    },
+    "cta": {
+      "title": "Ready to streamline your chemical procurement?",
+      "subtitle": "Join 5,000+ global enterprises trusting ChemDist Global.",
+      "button": "Get a Custom Quote"
+    },
+    "categories": {
+      "title": "Product Categories",
+      "adhesives": {
+        "title": "Hot Melt Adhesives",
+        "description": "High-performance bonding solutions"
+      },
+      "resins": {
+        "title": "Saturated Resins",
+        "description": "Premium coating materials"
+      },
+      "pigments": {
+        "title": "Industrial Pigments",
+        "description": "Vibrant color solutions"
+      }
+    },
+    "why": {
+      "title": "Why Choose ChemDist?",
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "All products meet international standards"
+      },
+      "delivery": {
+        "title": "Fast Delivery",
+        "description": "Efficient logistics worldwide"
+      },
+      "support": {
+        "title": "Expert Support",
+        "description": "Technical assistance available"
+      }
+    }
+  },
+  "catalog": {
+    "home": "Home",
+    "title": "Product Catalog",
+    "subtitle": "Browse our complete range of industrial chemicals and specialty products",
+    "search": "Search products...",
+    "filter": "Filter by Category",
+    "all": "All Categories",
+    "adhesives": "Hot Melt Adhesives",
+    "resins": "Saturated Resins",
+    "pigments": "Industrial Pigments",
+    "noProducts": "No products found",
+    "tryAdjusting": "Try adjusting your filters or search criteria to find what you're looking for.",
+    "clearAll": "Clear All Filters",
+    "cas": "CAS Number",
+    "application": "Application",
+    "stock": "In Stock",
+    "packaging": "Packaging",
+    "viewDetails": "View Details",
+    "requestQuote": "Request Quote"
+  },
+  "product": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "loading": "Loading product details...",
+    "notFound": "Product Not Found",
+    "backToCatalog": "Back to Catalog",
+    "cas": "CAS",
+    "application": "Application",
+    "stock": "Stock Status",
+    "inStock": "In Stock",
+    "packaging": "Packaging",
+    "description": "Product Description",
+    "specifications": "Technical Specifications",
+    "requestQuote": "Request a Quote",
+    "downloadSDS": "Download SDS (PDF)",
+    "certificateAnalysis": "Certificate of Analysis",
+    "packagingFulfillment": "Packaging & Fulfillment",
+    "availablePackaging": "Available Packaging:",
+    "getQuote": "Get Quote",
+    "getPricing": "Get pricing and delivery information for",
+    "fastDelivery": "Fast Delivery",
+    "shipsWithin": "Ships within 1-3 business days",
+    "qualityAssured": "Quality Assured",
+    "coaIncluded": "COA & SDS included",
+    "expertSupport": "Expert Support",
+    "technicalTeam": "Technical team available"
+  },
+  "quote": {
+    "home": "Home",
+    "title": "Request Quote",
+    "pageTitle": "Request a Quote",
+    "subtitle": "Get competitive pricing within 24 hours",
+    "description": "Fill out the form below and our chemical specialists will respond with pricing, availability, and technical support.",
+    "company": {
+      "title": "Company Information",
+      "name": "Company Name",
+      "namePlaceholder": "Acme Industries Inc.",
+      "industry": "Industry Type",
+      "selectIndustry": "Select Industry",
+      "adhesives": "Adhesives & Sealants Manufacturing",
+      "packaging": "Packaging & Converting",
+      "coatings": "Paints, Inks & Coatings",
+      "plastics": "Plastics & Composites",
+      "automotive": "Automotive & Transportation",
+      "construction": "Construction & Building Materials",
+      "textiles": "Textiles & Nonwovens",
+      "woodworking": "Woodworking & Furniture",
+      "printing": "Printing & Graphics",
+      "electronics": "Electronics & Assembly",
+      "other": "Other Industrial"
+    },
+    "contact": {
+      "title": "Contact Person",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Smith",
+      "jobTitle": "Job Title",
+      "jobTitlePlaceholder": "Procurement Manager",
+      "email": "Email Address",
+      "emailPlaceholder": "john.smith@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 123-4567"
+    },
+    "product": {
+      "title": "Product Details",
+      "category": "Product Category",
+      "selectCategory": "Select Product Category",
+      "hotMelt": "Hot Melt Adhesives",
+      "saturatedResins": "Saturated Resins",
+      "pigments": "Industrial Pigments",
+      "pressureSensitive": "Pressure Sensitive Adhesives",
+      "specialty": "Specialty Chemicals",
+      "other": "Other - Please Specify",
+      "name": "Specific Product Name",
+      "selectProduct": "Select a product",
+      "selectCategoryFirst": "Please select a category first to see available products",
+      "cas": "CAS Number (Optional)",
+      "casPlaceholder": "e.g., 64-17-5",
+      "application": "Intended Application",
+      "selectApplication": "Select Application",
+      "packagingSealing": "Packaging & Carton Sealing",
+      "labels": "Labels & Tapes",
+      "bookbinding": "Bookbinding & Paper Converting",
+      "woodworking": "Woodworking & Furniture",
+      "automotiveAssembly": "Automotive Assembly",
+      "electronicsAssembly": "Electronics Assembly",
+      "coatings": "Coatings & Inks",
+      "constructionMaterials": "Construction Materials",
+      "textiles": "Textiles & Nonwovens",
+      "foodIndustry": "Food Industry",
+      "otherApplication": "Other Application",
+      "techSpecs": "Technical Specifications",
+      "techSpecsPlaceholder": "e.g., Melt Index 5-25, Viscosity 2500 cps, Color Index"
+    },
+    "quantity": {
+      "title": "Quantity & Packaging",
+      "quantityLabel": "Quantity",
+      "quantityPlaceholder": "1000",
+      "kg": "KG",
+      "liters": "Liters",
+      "tons": "Tons",
+      "drums": "Drums",
+      "ibc": "IBCs",
+      "packaging": "Preferred Packaging",
+      "selectPackaging": "Select Packaging",
+      "bag25kg": "25 KG Bags/Cartons",
+      "drum200l": "200L Steel Drums",
+      "drumHdpe": "200L HDPE Drums",
+      "ibc1000l": "1000L IBC Totes",
+      "bulkTanker": "Bulk Tanker Truck",
+      "superSack": "Super Sacks (500-1000 KG)",
+      "pails": "Pails (5-20 Gallons)",
+      "customPackaging": "Custom Packaging Required",
+      "frequency": "Order Frequency",
+      "spot": "Spot Order (One-Time)",
+      "weekly": "Weekly Deliveries",
+      "biweekly": "Bi-Weekly Deliveries",
+      "monthly": "Monthly Contract",
+      "quarterly": "Quarterly Contract",
+      "annual": "Annual Supply Agreement",
+      "blanket": "Blanket Order with Call-Offs",
+      "deliveryDate": "Required Delivery Date"
+    },
+    "delivery": {
+      "title": "Delivery Information",
+      "country": "Country",
+      "selectCountry": "Select Country",
+      "us": "United States",
+      "ca": "Canada",
+      "mx": "Mexico",
+      "uk": "United Kingdom",
+      "de": "Germany",
+      "fr": "France",
+      "nl": "Netherlands",
+      "sg": "Singapore",
+      "cn": "China",
+      "other": "Other",
+      "cityPostal": "City / Postal Code",
+      "cityPostalPlaceholder": "Houston, TX 77032",
+      "address": "Delivery Address",
+      "addressPlaceholder": "Full delivery address (optional at this stage)"
+    },
+    "additional": {
+      "title": "Additional Information",
+      "notes": "Special Requirements / Notes",
+      "notesPlaceholder": "Any special requirements, certifications needed (CoA, SDS language), temperature control, regulatory compliance, etc."
+    },
+    "documentation": {
+      "title": "Required Documentation",
+      "coa": "Certificate of Analysis",
+      "sds": "Safety Data Sheet",
+      "reach": "REACH Compliance",
+      "iso": "ISO Certificates",
+      "halal": "Halal/Kosher Cert",
+      "customs": "Custom Declaration"
+    },
+    "submit": "Submit Quote Request",
+    "submitting": "Submitting...",
+    "secureMessage": "Your information is secure and will only be used to process your quote request",
+    "sidebar": {
+      "responseTime": "Response Time",
+      "hours24": "24 Hours",
+      "responseDesc": "Our chemical specialists will review your request and provide a detailed quote including pricing, availability, and lead times.",
+      "whyChoose": "Why ChemDist Global?",
+      "reliableQuality": "Reliable and consistent product quality",
+      "competitivePricing": "Competitive pricing with volume discounts",
+      "supplierNetwork": "Strong supplier network and partnerships",
+      "technicalSupport": "Technical support and product knowledge",
+      "timelyDelivery": "Timely delivery and responsive service",
+      "needHelp": "Need Assistance?",
+      "helpDesc": "Our sales team is ready to help with product selection, technical questions, or bulk pricing.",
+      "phone": "+1 (713) 555-0192",
+      "email": "sales@chemdist-global.com",
+      "hours": "Mon-Fri: 8AM - 6PM CST",
+      "browseCatalog": "Browse Our Catalog",
+      "exploreProducts": "Explore 2000+ chemical products"
+    },
+    "cta": {
+      "title": "Ready to streamline your chemical procurement?",
+      "subtitle": "Join 5,000+ global enterprises trusting ChemDist Global.",
+      "button": "Get a Custom Quote"
+    },
+    "success": "Quote request submitted successfully!",
+    "error": "Failed to submit quote request. Please try again."
+  },
+  "contact": {
+    "home": "Home",
+    "title": "Contact & Global Support",
+    "pageTitle": "Global Network,",
+    "pageHighlight": "Local Expertise.",
+    "subtitle": "Connecting you with specialized chemical distribution solutions across four continents. Reach out for technical assistance, sales inquiries, or logistics tracking.",
+    "emergency": {
+      "title": "Emergency Response",
+      "phone": "+1 (800) 424-9300",
+      "description": "24/7 Hazardous Material Incident Hotline (CHEMTREC Equivalent)"
+    },
+    "form": {
+      "title": "Direct Inquiry",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "e.g. Dr. Sarah Jenkins",
+      "email": "Professional Email",
+      "emailPlaceholder": "name@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Organization name",
+      "inquiry": "Inquiry Type",
+      "technical": "Technical Support / SDS",
+      "sales": "Bulk Sales Inquiries",
+      "logistics": "Logistics & Delivery",
+      "compliance": "Regulatory Compliance",
+      "message": "Message",
+      "messagePlaceholder": "Please provide specific chemical names or order numbers if applicable...",
+      "submit": "Submit Technical Inquiry",
+      "submitting": "Submitting...",
+      "success": "Thank you! Your inquiry has been sent successfully. We'll respond within 24 hours.",
+      "error": "Failed to send your inquiry. Please try again or contact us directly."
+    },
+    "offices": {
+      "title": "Regional Sales Offices",
+      "northAmerica": {
+        "title": "North America HQ",
+        "location": "Houston, TX, USA",
+        "phone": "+1 713 555 0192",
+        "hours": "08:00 - 18:00 CST"
+      },
+      "europe": {
+        "title": "European Hub",
+        "location": "Rotterdam, Netherlands",
+        "phone": "+31 10 440 2300",
+        "hours": "09:00 - 17:30 CET"
+      },
+      "apac": {
+        "title": "APAC Operations",
+        "location": "Jurong Island, Singapore",
+        "phone": "+65 6778 1234",
+        "hours": "08:30 - 18:00 SGT"
+      }
+    },
+    "map": {
+      "title": "Global Logistics Centers",
+      "live": "LIVE FEED"
+    },
+    "certifications": {
+      "iso": "ISO 9001:2015",
+      "responsibleCare": "Responsible Care®",
+      "reach": "REACH Compliant",
+      "iata": "IATA Certified"
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Chemical Distribution Careers |",
+      "subtitle": "Join Our Industry-Leading Team",
+      "description": "Launch your career in chemical distribution with ChemDist Global. Join ISO 9001 certified industry experts committed to safety, innovation, and excellence in global chemical logistics and supply chain management.",
+      "viewPositions": "View Open Positions",
+      "learnCulture": "Learn About Our Culture"
+    },
+    "why": {
+      "title": "Why Choose a Career in Chemical Distribution at ChemDist Global?",
+      "industry": {
+        "title": "Chemical Industry Leadership",
+        "description": "Work with industry pioneers in chemical distribution and contribute to setting global standards in chemical safety, hazmat handling, and sustainable distribution innovation. Gain expertise in adhesives, resins, and industrial pigments."
+      },
+      "development": {
+        "title": "Professional Development & Training",
+        "description": "Access comprehensive professional development programs including OSHA certifications, hazmat training, chemical safety courses, supply chain management, and specialized logistics education to advance your chemical industry career."
+      },
+      "network": {
+        "title": "Global Chemical Distribution Network",
+        "description": "Join a worldwide chemical distribution network spanning 52 logistics hubs across four continents. Serve critical industries including packaging, food processing, paints & coatings, plastics, polymers, and industrial manufacturing."
+      }
+    },
+    "culture": {
+      "title": "Chemical Distribution Company Culture & Values",
+      "subtitle": "We foster a workplace culture where chemical industry innovation thrives, safety is paramount, and every team member—from warehouse operations to sales—contributes to our success as a leading ISO 9001 certified chemical distributor.",
+      "collaboration": {
+        "title": "Collaborative Team Environment",
+        "description": "Build your chemical distribution career in a collaborative team environment. Our open-door policy and cross-functional collaboration between sales, logistics, operations, and technical teams foster innovation and problem-solving. Every voice matters—from warehouse operations to executive leadership."
+      },
+      "innovation": {
+        "title": "Innovation in Chemical Logistics",
+        "description": "Work with cutting-edge chemical logistics technology and supply chain software. We invest in digital transformation, automated inventory tracking systems, IoT-enabled temperature monitoring, and sustainable chemical distribution practices that position us as chemical industry leaders."
+      },
+      "safety": {
+        "title": "Chemical Safety First Culture",
+        "description": "Zero-incident safety culture is our priority in chemical handling and distribution. Comprehensive OSHA safety training, hazmat certifications, PPE equipment, state-of-the-art chemical storage facilities, and rigorous REACH compliance protocols ensure every team member returns home safely."
+      },
+      "growth": {
+        "title": "Career Growth & Advancement",
+        "description": "Your chemical industry career growth is our investment. Access mentorship programs, leadership development, supply chain certifications, hazmat qualifications, sales training, and clear advancement pathways from entry-level positions to management roles in our expanding global network."
+      }
+    },
+    "positions": {
+      "title": "Chemical Distribution Job Openings",
+      "subtitle": "Explore chemical industry career opportunities across operations, sales, chemical logistics, supply chain management, warehouse operations, technical services, and customer support roles.",
+      "noJobs": "No Active Chemical Industry Job Openings",
+      "noJobsDesc": "We currently have no open chemical distribution positions. However, we're always interested in connecting with talented chemical industry professionals, logistics specialists, sales representatives, and operations managers. Please submit a general application below and we'll keep your resume on file for future career opportunities."
+    },
+    "benefits": {
+      "title": "Comprehensive Benefits",
+      "health": {
+        "icon": "health_and_safety",
+        "title": "Health & Wellness",
+        "description": "Medical, dental, vision coverage"
+      },
+      "retirement": {
+        "icon": "savings",
+        "title": "Retirement Plans",
+        "description": "401(k) with company matching"
+      },
+      "timeOff": {
+        "icon": "event",
+        "title": "Time Off",
+        "description": "Generous PTO and holidays"
+      },
+      "balance": {
+        "icon": "family_restroom",
+        "title": "Work-Life Balance",
+        "description": "Flexible schedules & remote options"
+      }
+    },
+    "cta": {
+      "title": "Ready to Join Our Team?",
+      "subtitle": "Don't see a position that matches your skills? Send us your resume and we'll keep you in mind for future opportunities.",
+      "button": "Submit General Application"
+    }
+  },
+  "company": {
+    "hero": {
+      "title": "Reliability in Every Molecule",
+      "subtitle": "From local sourcing to global orchestration, we ensure the integrity and safety of chemical distribution through precision logistics and uncompromising compliance.",
+      "complianceButton": "View Compliance Reports",
+      "missionButton": "Our Mission"
+    },
+    "stats": {
+      "experience": {
+        "value": "35+",
+        "label": "Years Experience"
+      },
+      "distributed": {
+        "value": "120k",
+        "label": "Tons Distributed"
+      },
+      "hubs": {
+        "value": "52",
+        "label": "Global Hubs"
+      },
+      "compliant": {
+        "value": "100%",
+        "label": "REACH Compliant"
+      }
+    },
+    "journey": {
+      "title": "Our Journey & Mission",
+      "founded": {
+        "label": "Founded in Houston",
+        "description": "1985 — Started as a local solvent distributor for the Texas oil industry."
+      },
+      "expanded": {
+        "label": "Expanded to European Markets",
+        "description": "1998 — Opened the Rotterdam hub to bridge transatlantic chemical supply chains."
+      },
+      "certified": {
+        "label": "ISO 9001 & 14001 Certified",
+        "description": "2010 — Standardized all operations under global quality and environmental frameworks."
+      },
+      "global": {
+        "label": "Global Logistics Hub Launch",
+        "description": "2023 — Integrated AI-driven tracking across our 52 worldwide distribution centers."
+      }
+    },
+    "map": {
+      "title": "Global Distribution Network",
+      "subtitle": "Real-time hub availability and shipping lanes.",
+      "legend": {
+        "primary": "Primary Hubs",
+        "centers": "Distribution Centers"
+      },
+      "houston": {
+        "name": "Houston HQ",
+        "capacity": "Cap: 45,000 m³"
+      }
+    },
+    "compliance": {
+      "title": "Quality Assurance",
+      "subtitle": "Global Regulatory Compliance",
+      "description": "We maintain the highest industry standards to ensure product safety, environmental protection, and operational excellence across all jurisdictions.",
+      "iso": {
+        "title": "ISO 9001:2015",
+        "description": "Quality management system certification ensuring consistent product quality and customer satisfaction through rigorous internal auditing.",
+        "button": "Download Certificate"
+      },
+      "environmental": {
+        "title": "ISO 14001:2015",
+        "description": "Environmental management standards focusing on waste reduction, resource efficiency, and minimizing the environmental footprint of our logistics.",
+        "button": "View Compliance Status"
+      },
+      "reach": {
+        "title": "REACH Compliance",
+        "description": "Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH) adherence for all substances distributed within the EU.",
+        "button": "Regulatory Database"
+      }
+    },
+    "sustainability": {
+      "title": "Sustainable Chemistry, Sustainable Future",
+      "description": "Our \"Green Path\" initiative aims to achieve net-zero carbon emissions in our logistics network by 2040. We don't just move chemicals; we move toward a cleaner planet.",
+      "emission": {
+        "value": "25%",
+        "label": "Reduction in Fleet Emissions"
+      },
+      "waste": {
+        "value": "98%",
+        "label": "Waste Recycled/Recovered"
+      },
+      "badge": "Sustainability First"
+    }
+  },
+  "shipping": {
+    "title": "Shipping & Logistics",
+    "subtitle": "Efficient and reliable delivery worldwide",
+    "domestic": {
+      "title": "Domestic Shipping",
+      "description": "2-3 business days within UAE"
+    },
+    "international": {
+      "title": "International Shipping",
+      "description": "7-14 business days worldwide"
+    },
+    "tracking": {
+      "title": "Order Tracking",
+      "description": "Real-time tracking available for all orders"
+    }
+  },
+  "footer": {
+    "description": "Supplying high-performance adhesives, saturated resins, and pigments for packaging, coatings, and manufacturing industries.",
+    "products": {
+      "title": "Products",
+      "adhesives": "Hot Melt Adhesives",
+      "resins": "Saturated Resins",
+      "pigments": "Industrial Pigments",
+      "viewAll": "View All Products"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 ChemDist Global Distribution Inc. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "shipping": "Shipping Policy"
+  }
+}
