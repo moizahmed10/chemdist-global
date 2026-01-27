@@ -168,7 +168,9 @@ export default function Home() {
                   {t("industries.packaging.title")}
                 </h3>
                 <p
-                  ref={(el) => (descriptionRefs.current[0] = el)}
+                  ref={(el) => {
+                    descriptionRefs.current[0] = el;
+                  }}
                   className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
                 >
                   {t("industries.packaging.description")}
@@ -194,7 +196,9 @@ export default function Home() {
                   {t("industries.coatings.title")}
                 </h3>
                 <p
-                  ref={(el) => (descriptionRefs.current[1] = el)}
+                  ref={(el) => {
+                    descriptionRefs.current[1] = el;
+                  }}
                   className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
                 >
                   {t("industries.coatings.description")}
@@ -220,7 +224,9 @@ export default function Home() {
                   {t("industries.plastics.title")}
                 </h3>
                 <p
-                  ref={(el) => (descriptionRefs.current[2] = el)}
+                  ref={(el) => {
+                    descriptionRefs.current[2] = el;
+                  }}
                   className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
                 >
                   {t("industries.plastics.description")}
@@ -246,7 +252,9 @@ export default function Home() {
                   {t("industries.manufacturing.title")}
                 </h3>
                 <p
-                  ref={(el) => (descriptionRefs.current[3] = el)}
+                  ref={(el) => {
+                    descriptionRefs.current[3] = el;
+                  }}
                   className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
                 >
                   {t("industries.manufacturing.description")}
