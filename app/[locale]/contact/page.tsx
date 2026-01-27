@@ -231,7 +231,6 @@ export default function ContactPage() {
                     <option value="technical">{t("form.technical")}</option>
                     <option value="sales">{t("form.sales")}</option>
                     <option value="logistics">{t("form.logistics")}</option>
-                    <option value="compliance">{t("form.compliance")}</option>
                   </select>
                 </label>
               </div>
@@ -429,39 +428,6 @@ export default function ContactPage() {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-        {/* Trust Indicators */}
-        <div
-          className={`mt-20 py-8 border-t border-gray-200 dark:border-gray-800 flex flex-wrap items-center justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all ${isRTL ? "flex-row-reverse" : ""}`}
-        >
-          <div className="flex flex-col items-center gap-2">
-            <span className="material-symbols-outlined text-3xl">
-              verified_user
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">
-              {t("certifications.iso")}
-            </span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <span className="material-symbols-outlined text-3xl">eco</span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">
-              {t("certifications.responsibleCare")}
-            </span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <span className="material-symbols-outlined text-3xl">security</span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">
-              {t("certifications.reach")}
-            </span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <span className="material-symbols-outlined text-3xl">
-              inventory
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">
-              {t("certifications.iata")}
-            </span>
           </div>
         </div>
       </main>

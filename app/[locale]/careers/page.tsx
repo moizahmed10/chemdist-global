@@ -15,7 +15,7 @@ export default function CareersPage() {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Join ChemDist Global's chemical distribution team. Explore careers in chemical logistics, sales, operations, and technical services. ISO 9001 certified company offering competitive salaries, health benefits, 401k, professional development, and career growth opportunities in the chemical industry.",
+        "Join ChemDist Global's chemical distribution team. Explore careers in chemical logistics, sales, operations, and technical services. Offering competitive salaries, health benefits, 401k, professional development, and career growth opportunities in the chemical industry.",
       );
     }
   }, []);
@@ -228,9 +228,6 @@ export default function CareersPage() {
                   health_and_safety
                 </span>
                 <h3 className="font-bold mb-2">{t("benefits.health.title")}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("benefits.health.description")}
-                </p>
               </div>
               <div className="text-center p-6 hover-lift">
                 <span className="material-symbols-outlined text-4xl text-primary mb-3">
@@ -239,9 +236,6 @@ export default function CareersPage() {
                 <h3 className="font-bold mb-2">
                   {t("benefits.retirement.title")}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("benefits.retirement.description")}
-                </p>
               </div>
               <div className="text-center p-6 hover-lift">
                 <span className="material-symbols-outlined text-4xl text-primary mb-3">
@@ -250,9 +244,6 @@ export default function CareersPage() {
                 <h3 className="font-bold mb-2">
                   {t("benefits.timeOff.title")}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("benefits.timeOff.description")}
-                </p>
               </div>
               <div className="text-center p-6 hover-lift">
                 <span className="material-symbols-outlined text-4xl text-primary mb-3">
@@ -261,9 +252,6 @@ export default function CareersPage() {
                 <h3 className="font-bold mb-2">
                   {t("benefits.balance.title")}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("benefits.balance.description")}
-                </p>
               </div>
             </div>
           </div>

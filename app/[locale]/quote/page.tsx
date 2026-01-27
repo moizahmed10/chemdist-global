@@ -116,7 +116,7 @@ export default function QuotePage() {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Request a custom quote for bulk chemicals, adhesives, resins, and pigments. 24-hour response time with competitive pricing and volume discounts. ISO 9001 certified distributor.",
+        "Request a custom quote for bulk chemicals, adhesives, resins, and pigments. 24-hour response time with competitive pricing and volume discounts.",
       );
     }
 
@@ -180,78 +180,6 @@ export default function QuotePage() {
 
                 <div className="p-10">
                   <form className="space-y-12" onSubmit={handleSubmit}>
-                    {/* Company Information */}
-                    <div className="space-y-6">
-                      <div className="flex items-center gap-4 pb-4 mb-2 border-b-2 border-primary/20">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <span className="material-symbols-outlined text-primary text-2xl">
-                            business
-                          </span>
-                        </div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                          {t("company.title")}
-                        </h2>
-                      </div>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="relative">
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("company.name")} *
-                          </label>
-                          <input
-                            type="text"
-                            name="company"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            placeholder={t("company.namePlaceholder")}
-                            required
-                          />
-                        </div>
-                        <div className="relative">
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("company.industry")} *
-                          </label>
-                          <select
-                            name="industry"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                          >
-                            <option value="">
-                              {t("company.selectIndustry")}
-                            </option>
-                            <option value="adhesives">
-                              {t("company.adhesives")}
-                            </option>
-                            <option value="packaging">
-                              {t("company.packaging")}
-                            </option>
-                            <option value="coatings">
-                              {t("company.coatings")}
-                            </option>
-                            <option value="plastics">
-                              {t("company.plastics")}
-                            </option>
-                            <option value="automotive">
-                              {t("company.automotive")}
-                            </option>
-                            <option value="construction">
-                              {t("company.construction")}
-                            </option>
-                            <option value="textiles">
-                              {t("company.textiles")}
-                            </option>
-                            <option value="woodworking">
-                              {t("company.woodworking")}
-                            </option>
-                            <option value="printing">
-                              {t("company.printing")}
-                            </option>
-                            <option value="electronics">
-                              {t("company.electronics")}
-                            </option>
-                            <option value="other">{t("company.other")}</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
                     {/* Contact Person */}
                     <div className="space-y-6">
                       <div className="flex items-center gap-4 pb-4 mb-2 border-b-2 border-primary/20">
@@ -411,14 +339,13 @@ export default function QuotePage() {
                         </div>
                         <div>
                           <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("product.application")} *
+                            {t("product.application")}
                           </label>
                           <select
                             name="application"
                             className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
                             value={application}
                             onChange={(e) => setApplication(e.target.value)}
-                            required
                           >
                             <option value="">
                               {t("product.selectApplication")}
@@ -458,6 +385,7 @@ export default function QuotePage() {
                             </option>
                           </select>
                         </div>
+
                         <div>
                           <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
                             {t("product.techSpecs")}
@@ -467,126 +395,6 @@ export default function QuotePage() {
                             name="tech_specs"
                             className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
                             placeholder={t("product.techSpecsPlaceholder")}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Quantity & Packaging */}
-                    <div className="space-y-6">
-                      <div className="flex items-center gap-4 pb-4 mb-2 border-b-2 border-primary/20">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <span className="material-symbols-outlined text-primary text-2xl">
-                            inventory_2
-                          </span>
-                        </div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                          {t("quantity.title")}
-                        </h2>
-                      </div>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("quantity.quantityLabel")} *
-                          </label>
-                          <div className="flex gap-3">
-                            <input
-                              type="number"
-                              name="quantity"
-                              className="flex-1 px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                              placeholder={t("quantity.quantityPlaceholder")}
-                              required
-                            />
-                            <select
-                              name="quantity_unit"
-                              className="w-24 px-3 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            >
-                              <option value="kg">{t("quantity.kg")}</option>
-                              <option value="liters">
-                                {t("quantity.liters")}
-                              </option>
-                              <option value="tons">{t("quantity.tons")}</option>
-                              <option value="drums">
-                                {t("quantity.drums")}
-                              </option>
-                              <option value="ibc">{t("quantity.ibc")}</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("quantity.packaging")} *
-                          </label>
-                          <select
-                            name="packaging"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            required
-                          >
-                            <option value="">
-                              {t("quantity.selectPackaging")}
-                            </option>
-                            <option value="bag-25kg">
-                              {t("quantity.bag25kg")}
-                            </option>
-                            <option value="drum-200l">
-                              {t("quantity.drum200l")}
-                            </option>
-                            <option value="drum-hdpe">
-                              {t("quantity.drumHdpe")}
-                            </option>
-                            <option value="ibc-1000l">
-                              {t("quantity.ibc1000l")}
-                            </option>
-                            <option value="bulk-tanker">
-                              {t("quantity.bulkTanker")}
-                            </option>
-                            <option value="supersack">
-                              {t("quantity.superSack")}
-                            </option>
-                            <option value="pails">{t("quantity.pails")}</option>
-                            <option value="custom">
-                              {t("quantity.customPackaging")}
-                            </option>
-                          </select>
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("quantity.frequency")} *
-                          </label>
-                          <select
-                            name="frequency"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            required
-                          >
-                            <option value="spot">{t("quantity.spot")}</option>
-                            <option value="weekly">
-                              {t("quantity.weekly")}
-                            </option>
-                            <option value="biweekly">
-                              {t("quantity.biweekly")}
-                            </option>
-                            <option value="monthly">
-                              {t("quantity.monthly")}
-                            </option>
-                            <option value="quarterly">
-                              {t("quantity.quarterly")}
-                            </option>
-                            <option value="annual">
-                              {t("quantity.annual")}
-                            </option>
-                            <option value="blanket">
-                              {t("quantity.blanket")}
-                            </option>
-                          </select>
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("quantity.deliveryDate")}
-                          </label>
-                          <input
-                            type="date"
-                            name="delivery_date"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
                           />
                         </div>
                       </div>
@@ -605,6 +413,16 @@ export default function QuotePage() {
                         </h2>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
+                            {t("quantity.deliveryDate")}
+                          </label>
+                          <input
+                            type="date"
+                            name="delivery_date"
+                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
+                          />
+                        </div>
                         <div>
                           <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
                             {t("delivery.country")} *
@@ -628,6 +446,7 @@ export default function QuotePage() {
                             <option value="other">{t("delivery.other")}</option>
                           </select>
                         </div>
+
                         <div>
                           <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
                             {t("delivery.cityPostal")} *
@@ -676,75 +495,6 @@ export default function QuotePage() {
                           className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none hover:border-gray-300 dark:hover:border-gray-500"
                           placeholder={t("additional.notesPlaceholder")}
                         ></textarea>
-                      </div>
-                    </div>
-
-                    {/* Certifications Needed */}
-                    <div className="space-y-5 bg-gray-50 dark:bg-gray-900/30 p-8 rounded-xl">
-                      <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-                        {t("documentation.title")}
-                      </label>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="COA"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.coa")}
-                          </span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="SDS"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.sds")}
-                          </span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="REACH"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.reach")}
-                          </span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="ISO"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.iso")}
-                          </span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="Halal"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.halal")}
-                          </span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800 transition-colors">
-                          <input
-                            type="checkbox"
-                            value="Customs"
-                            className="w-5 h-5 text-primary rounded-md focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                          />
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                            {t("documentation.customs")}
-                          </span>
-                        </label>
                       </div>
                     </div>
 

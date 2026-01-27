@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | ChemDist Global",
   },
   description:
-    "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified with temperature-controlled logistics and 99.8% on-time delivery.",
+    "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. Delivering premium chemicals with temperature-controlled logistics and 99.8% on-time delivery.",
   keywords: [
     "chemical distribution",
     "hot melt adhesives",
@@ -29,8 +29,7 @@ export const metadata: Metadata = {
     "adhesive supplier",
     "chemical logistics",
     "bulk chemicals",
-    "ISO 9001 certified",
-    "REACH compliance",
+
     "industrial chemicals",
     "packaging adhesives",
     "coating resins",

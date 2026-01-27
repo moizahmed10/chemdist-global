@@ -29,22 +29,6 @@ export default function Footer() {
             <p className="text-gray-500 dark:text-gray-400 text-sm max-w-xs mb-6">
               {t("description")}
             </p>
-            <div className="flex gap-4">
-              <a
-                className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary transition-colors"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-sm">hub</span>
-              </a>
-              <a
-                className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary transition-colors"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-sm">
-                  alternate_email
-                </span>
-              </a>
-            </div>
           </div>
           <div>
             <h5 className="font-bold text-sm uppercase tracking-widest mb-6">
@@ -119,17 +103,6 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between gap-4 text-xs text-gray-400">
           <p>{t("copyright")}</p>
-          <div className="flex gap-6">
-            <Link className="hover:text-primary" href={`/${locale}/privacy`}>
-              {t("privacy")}
-            </Link>
-            <Link className="hover:text-primary" href={`/${locale}/terms`}>
-              {t("terms")}
-            </Link>
-            <Link className="hover:text-primary" href={`/${locale}/shipping`}>
-              {t("shipping")}
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

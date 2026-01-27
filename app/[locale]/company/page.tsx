@@ -6,6 +6,14 @@ import Footer from "@/components/Footer";
 
 export default function CompanyPage() {
   const t = useTranslations("company");
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <Header />
@@ -32,10 +40,10 @@ export default function CompanyPage() {
                 className="flex gap-4 mt-4 animate-fade-in"
                 style={{ animationDelay: "0.3s" }}
               >
-                <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:shadow-lg transition-all hover:-translate-y-1">
-                  {t("hero.complianceButton")}
-                </button>
-                <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold hover:bg-white/20 transition-all hover:-translate-y-1">
+                <button
+                  onClick={() => scrollToSection("mission")}
+                  className="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold hover:bg-white/20 transition-all hover:-translate-y-1"
+                >
                   {t("hero.missionButton")}
                 </button>
               </div>
@@ -90,7 +98,10 @@ export default function CompanyPage() {
           </div>
         </section>
         {/* Journey & Global Presence */}
-        <section className="w-full max-w-[1280px] px-10 py-12 flex flex-col md:flex-row gap-12">
+        <section
+          id="mission"
+          className="w-full max-w-[1280px] px-10 py-12 flex flex-col md:flex-row gap-12"
+        >
           <div className="flex-1">
             <h2 className="text-[#121617] dark:text-white text-3xl font-bold mb-8">
               {t("journey.title")}
@@ -122,22 +133,6 @@ export default function CompanyPage() {
                 </p>
                 <p className="text-[#677e83] dark:text-gray-400 text-base">
                   {t("journey.expanded.description")}
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-1">
-                <div className="text-primary">
-                  <span className="material-symbols-outlined">
-                    verified_user
-                  </span>
-                </div>
-                <div className="w-[2px] bg-primary/20 h-12 grow"></div>
-              </div>
-              <div className="flex flex-1 flex-col pb-8">
-                <p className="text-[#121617] dark:text-white text-lg font-bold">
-                  {t("journey.certified.label")}
-                </p>
-                <p className="text-[#677e83] dark:text-gray-400 text-base">
-                  {t("journey.certified.description")}
                 </p>
               </div>
               <div className="flex flex-col items-center gap-1">
@@ -217,84 +212,7 @@ export default function CompanyPage() {
             </div>
           </div>
         </section>
-        {/* Compliance & Certifications */}
-        <section className="w-full bg-white dark:bg-background-dark py-16 border-y border-gray-100 dark:border-gray-800">
-          <div className="max-w-[1280px] mx-auto px-10">
-            <div className="flex flex-col items-center text-center mb-12">
-              <span className="text-primary font-bold text-sm tracking-widest uppercase mb-2">
-                {t("compliance.title")}
-              </span>
-              <h2 className="text-3xl font-black">
-                {t("compliance.subtitle")}
-              </h2>
-              <p className="max-w-2xl text-[#677e83] dark:text-gray-400 mt-4">
-                {t("compliance.description")}
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Card 1 */}
-              <div className="flex flex-col p-8 bg-background-light dark:bg-gray-800 rounded-2xl border border-transparent hover:border-primary transition-all group">
-                <div className="size-14 bg-white dark:bg-gray-700 rounded-xl flex items-center justify-center mb-6 shadow-sm">
-                  <span className="material-symbols-outlined text-primary text-3xl">
-                    verified
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {t("compliance.iso.title")}
-                </h3>
-                <p className="text-[#677e83] dark:text-gray-400 text-sm leading-relaxed mb-6">
-                  {t("compliance.iso.description")}
-                </p>
-                <button className="mt-auto flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all">
-                  {t("compliance.iso.button")}{" "}
-                  <span className="material-symbols-outlined text-sm">
-                    download
-                  </span>
-                </button>
-              </div>
-              {/* Card 2 */}
-              <div className="flex flex-col p-8 bg-background-light dark:bg-gray-800 rounded-2xl border border-transparent hover:border-primary transition-all group">
-                <div className="size-14 bg-white dark:bg-gray-700 rounded-xl flex items-center justify-center mb-6 shadow-sm">
-                  <span className="material-symbols-outlined text-primary text-3xl">
-                    eco
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {t("compliance.environmental.title")}
-                </h3>
-                <p className="text-[#677e83] dark:text-gray-400 text-sm leading-relaxed mb-6">
-                  {t("compliance.environmental.description")}
-                </p>
-                <button className="mt-auto flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all">
-                  {t("compliance.environmental.button")}{" "}
-                  <span className="material-symbols-outlined text-sm">
-                    open_in_new
-                  </span>
-                </button>
-              </div>
-              {/* Card 3 */}
-              <div className="flex flex-col p-8 bg-background-light dark:bg-gray-800 rounded-2xl border border-transparent hover:border-primary transition-all group">
-                <div className="size-14 bg-white dark:bg-gray-700 rounded-xl flex items-center justify-center mb-6 shadow-sm">
-                  <span className="material-symbols-outlined text-primary text-3xl">
-                    policy
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {t("compliance.reach.title")}
-                </h3>
-                <p className="text-[#677e83] dark:text-gray-400 text-sm leading-relaxed mb-6">
-                  {t("compliance.reach.description")}
-                </p>
-                <button className="mt-auto flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all">
-                  {t("compliance.reach.button")}{" "}
-                  <span className="material-symbols-outlined text-sm">
-                    database
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+
         {/* Sustainability Section */}
         <section className="w-full max-w-[1280px] px-10 py-20">
           <div className="bg-primary rounded-3xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 text-white">

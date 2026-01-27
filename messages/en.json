@@ -13,7 +13,8 @@
       "title": "Premium Chemical Distribution",
       "subtitle": "Your trusted partner for industrial chemicals, adhesives, resins, and specialty coatings worldwide",
       "cta": "Browse Products",
-      "requestQuote": "Request a Quote"
+      "requestQuote": "Request a Quote",
+      "contactUs": "Contact Us"
     },
     "search": {
       "placeholder": "Search adhesives, resins, pigments...",
@@ -110,6 +111,7 @@
     "adhesives": "Hot Melt Adhesives",
     "resins": "Saturated Resins",
     "pigments": "Industrial Pigments",
+    "loading": "Loading products...",
     "noProducts": "No products found",
     "tryAdjusting": "Try adjusting your filters or search criteria to find what you're looking for.",
     "clearAll": "Clear All Filters",
@@ -319,7 +321,7 @@
       "title": "Direct Inquiry",
       "fullName": "Full Name",
       "fullNamePlaceholder": "e.g. Dr. Sarah Jenkins",
-      "email": "Professional Email",
+      "email": "Email",
       "emailPlaceholder": "name@company.com",
       "company": "Company",
       "companyPlaceholder": "Organization name",

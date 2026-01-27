@@ -3,7 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -11,6 +11,7 @@ export default function Home() {
   const locale = useLocale();
   const t = useTranslations("home");
   const [searchQuery, setSearchQuery] = useState("");
+  const descriptionRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -20,9 +21,31 @@ export default function Home() {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified with 99.8% on-time delivery. Serving packaging, coatings, plastics, and industrial manufacturing.",
+        "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. Delivering premium chemicals with 99.8% on-time delivery. Serving packaging, coatings, plastics, and industrial manufacturing.",
       );
     }
+  }, []);
+
+  // Reveal industry descriptions when they enter the viewport (mobile/tablet friendly)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+          } else {
+            entry.target.classList.remove("opacity-100", "translate-y-0");
+          }
+        });
+      },
+      { threshold: 0.6 },
+    );
+
+    descriptionRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const handleSearch = (e: React.FormEvent) => {
@@ -64,12 +87,10 @@ export default function Home() {
                   className="flex flex-wrap gap-4 animate-slide-up"
                   style={{ animationDelay: "0.4s" }}
                 >
-                  <Link href={`/${locale}/quote`}>
+                  <Link href={`/${locale}/contact`}>
                     <button className="px-8 py-4 bg-white text-primary font-bold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all flex items-center gap-2">
-                      <span className="material-symbols-outlined">
-                        description
-                      </span>
-                      {t("hero.requestQuote")}
+                      <span className="material-symbols-outlined">mail</span>
+                      {t("hero.contactUs")}
                     </button>
                   </Link>
                   <Link href={`/${locale}/catalog`}>
@@ -85,7 +106,7 @@ export default function Home() {
         </section>
 
         {/* Search & Quick Access */}
-        <section className="max-w-4xl mx-auto px-4 -mt-12 relative z-30">
+        <section className="max-w-4xl mx-auto px-4 -mt-8 relative z-30">
           <form
             onSubmit={handleSearch}
             className="bg-white dark:bg-gray-800 p-2 rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 animate-scale-in"
@@ -113,26 +134,6 @@ export default function Home() {
               </div>
             </div>
           </form>
-          <div className="flex justify-center gap-6 mt-6 overflow-x-auto pb-4">
-            <button className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors whitespace-nowrap">
-              <span className="material-symbols-outlined text-sm">
-                inventory_2
-              </span>{" "}
-              {t("search.sds")}
-            </button>
-            <button className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors whitespace-nowrap">
-              <span className="material-symbols-outlined text-sm">
-                local_shipping
-              </span>{" "}
-              {t("search.tracking")}
-            </button>
-            <button className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors whitespace-nowrap">
-              <span className="material-symbols-outlined text-sm">
-                verified
-              </span>{" "}
-              {t("search.compliance")}
-            </button>
-          </div>
         </section>
 
         {/* Industries Section */}
@@ -166,7 +167,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2 leading-tight min-h-[60px]">
                   {t("industries.packaging.title")}
                 </h3>
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed min-h-[42px]">
+                <p
+                  ref={(el) => (descriptionRefs.current[0] = el)}
+                  className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
+                >
                   {t("industries.packaging.description")}
                 </p>
               </div>
@@ -189,7 +193,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2 leading-tight min-h-[60px]">
                   {t("industries.coatings.title")}
                 </h3>
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed min-h-[42px]">
+                <p
+                  ref={(el) => (descriptionRefs.current[1] = el)}
+                  className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
+                >
                   {t("industries.coatings.description")}
                 </p>
               </div>
@@ -212,7 +219,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2 leading-tight min-h-[60px]">
                   {t("industries.plastics.title")}
                 </h3>
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed min-h-[42px]">
+                <p
+                  ref={(el) => (descriptionRefs.current[2] = el)}
+                  className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
+                >
                   {t("industries.plastics.description")}
                 </p>
               </div>
@@ -235,7 +245,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2 leading-tight min-h-[60px]">
                   {t("industries.manufacturing.title")}
                 </h3>
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed min-h-[42px]">
+                <p
+                  ref={(el) => (descriptionRefs.current[3] = el)}
+                  className="text-gray-300 text-sm leading-relaxed min-h-[42px] opacity-0 translate-y-2 transition-all duration-500 md:opacity-0 md:group-hover:opacity-100"
+                >
                   {t("industries.manufacturing.description")}
                 </p>
               </div>
@@ -280,21 +293,6 @@ export default function Home() {
                       </h4>
                       <p className="text-gray-500 text-sm">
                         {t("logistics.hubs.description")}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                      <span className="material-symbols-outlined">
-                        verified_user
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg">
-                        {t("logistics.regulatory.title")}
-                      </h4>
-                      <p className="text-gray-500 text-sm">
-                        {t("logistics.regulatory.description")}
                       </p>
                     </div>
                   </div>
@@ -347,39 +345,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* CTA / Certifications Banner */}
-        <section className="py-12 bg-primary">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-white text-center md:text-left">
-              <h3 className="text-xl font-bold mb-2">{t("cta.title")}</h3>
-              <p className="text-white/80">{t("cta.subtitle")}</p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-6 opacity-80 grayscale invert">
-              <img
-                alt="ISO 9001 Certification"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGXUUVm5uhekozGFYhogX00sZ6Wc8IETB1t29JahICnRvMAnT2QG3zcneDmdNxxD3_bZ2T3TWB-txpraW2ptGmiwaj9_FrAFVa55kQd8l_Gj79_2oy4BVvj61JIks-K7C9l5HT7QgXw87ORqLRuvsNj3tqLrheAi419zw7d2g4Kut07OM09IjoRMDz3eYla8EoaXOAZO9yaKD2-BqaPujvmYQwGu1tyRBsBBw72Rrx0FbYRW_TgTNK6tstKqD4U8eOxOKmqIhzB5w"
-                className="h-12"
-              />
-              <img
-                alt="REACH Compliance"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcwB-mBbWlKknTP1Rs24aD7sbElLJCeYocdYr4guArfytvy4x11Knmor8CByR36GvJWRXSRtJQxyOB6bbFYuKcZRo-g-goXyezntbaKRfgszX91JSOFBx0niSeKPl4rpnT3Pmt8WYSXneZvBEp3_HfTMV1A-INTjAOFoAutmiNVgD8tqmKK-u087Nd1f7qqgpOCYrxrcNLO-PEOCVSrgZPwo9izq1ltfDp7ARt3UleaSiD6tOZdsRdF4rhNDkUf4Ktkgp7sqLcBsE"
-                className="h-12"
-              />
-              <img
-                alt="Partner Logo"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcLwWSbR40oFaVu6JhYgUn-66h0f4OXF9VXyTHsq8ajL6V9YNhPqa6mWpFK_YjliXNRs4KxToe8_9o224jV6RJgUt0p7p0QFWoS3AJqwHsYgPrvvVpIAd_f45z1F9gBNCmfVhz5TjQ5HJ-pap_LI9eoN4dEojca1vU5fjybUxzpHpzZs70eThT3K21jMeFjkzq1YPRWkmdPGZfYyRjWq3eC_ISnlDcB1ANOi9vgtCMC0DNKzldvIU740s3hnD0Qw84U_JwFHbIdbk"
-                className="h-12"
-              />
-            </div>
-            <Link
-              href={`/${locale}/quote`}
-              className="px-8 py-3 bg-white text-primary font-bold rounded-lg hover:bg-gray-100 transition-all inline-block"
-            >
-              {t("cta.button")}
-            </Link>
           </div>
         </section>
       </main>
