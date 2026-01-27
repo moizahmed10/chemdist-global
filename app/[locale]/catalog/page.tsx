@@ -465,9 +465,6 @@ export default function CatalogPage() {
                         <h4 className="text-xl font-bold leading-tight">
                           {product.name}
                         </h4>
-                        <code className="text-xs bg-white/80 dark:bg-black/20 px-2 py-0.5 rounded mt-2 inline-block w-fit text-gray-500 font-mono">
-                          {t("cas")} {product.cas}
-                        </code>
                       </div>
                     </div>
                     <div
@@ -480,30 +477,6 @@ export default function CatalogPage() {
                       <p className="text-sm text-gray-500 line-clamp-2 mb-4 leading-relaxed">
                         {product.description}
                       </p>
-                      <div className="flex items-center gap-4 mb-6">
-                        <div className="flex-1">
-                          <p className="text-[10px] font-bold text-gray-400 uppercase">
-                            {t("packaging")}
-                          </p>
-                          <p className="text-sm font-semibold">
-                            {product.packaging}
-                          </p>
-                        </div>
-                        <div className="flex gap-2">
-                          <span
-                            className="material-symbols-outlined text-gray-400 text-lg cursor-help hover:text-primary"
-                            title="Safety Data Sheet available"
-                          >
-                            description
-                          </span>
-                          <span
-                            className="material-symbols-outlined text-gray-400 text-lg cursor-help hover:text-primary"
-                            title="Certificate of Analysis available"
-                          >
-                            verified
-                          </span>
-                        </div>
-                      </div>
                       <div
                         className={
                           viewMode === "list"
@@ -526,14 +499,6 @@ export default function CatalogPage() {
                         >
                           {t("requestQuote")}
                         </Link>
-                        {viewMode === "list" && (
-                          <Link
-                            href={`/${locale}/quote?product=${encodeURIComponent(product.name)}&category=${encodeURIComponent(product.category)}&cas=${encodeURIComponent(product.cas)}&application=${encodeURIComponent(product.application)}`}
-                            className="w-full sm:flex-1 bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20 hover:brightness-110 transition-all text-sm flex items-center justify-center"
-                          >
-                            {t("requestQuote")}
-                          </Link>
-                        )}
                       </div>
                     </div>
                   </div>

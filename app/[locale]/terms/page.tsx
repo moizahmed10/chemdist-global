@@ -250,7 +250,7 @@ export default function TermsPage() {
                 <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
                   <p className="font-bold mb-2">Legal Department</p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Email: legal@chemdist-global.com
+                    Email: info@chemlinktrading.com
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
                     Phone: +1 (713) 555-0198

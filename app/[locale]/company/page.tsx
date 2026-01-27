@@ -174,40 +174,26 @@ export default function CompanyPage() {
                 </span>
               </div>
               {/* Map Pins */}
-              <div className="absolute top-1/4 left-1/4 group cursor-pointer">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
                 <div className="bg-primary text-white p-2 rounded-full shadow-lg flex items-center justify-center">
                   <span className="material-symbols-outlined text-sm">
                     location_on
                   </span>
                 </div>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-32 bg-white dark:bg-gray-900 p-2 rounded text-[10px] shadow-xl opacity-0 group-hover:opacity-100 transition-opacity">
-                  <p className="font-bold">{t("map.houston.name")}</p>
-                  <p>{t("map.houston.capacity")}</p>
-                </div>
-              </div>
-              <div className="absolute top-1/3 left-1/2 group cursor-pointer">
-                <div className="bg-primary text-white p-2 rounded-full shadow-lg flex items-center justify-center">
-                  <span className="material-symbols-outlined text-sm">
-                    location_on
-                  </span>
-                </div>
-              </div>
-              <div className="absolute bottom-1/3 right-1/4 group cursor-pointer">
-                <div className="bg-primary text-white p-2 rounded-full shadow-lg flex items-center justify-center">
-                  <span className="material-symbols-outlined text-sm">
-                    location_on
-                  </span>
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-40 bg-white dark:bg-gray-900 p-2 rounded text-[10px] shadow-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                  <p className="font-bold">Regional Sales Office</p>
+                  <p>Riyadh, Saudi Arabia</p>
                 </div>
               </div>
             </div>
             <div className="p-4 flex gap-4 text-xs font-medium uppercase tracking-tighter">
               <div className="flex items-center gap-1">
-                <span className="size-2 rounded-full bg-primary"></span>{" "}
-                {t("map.legend.primary")}
+                <span className="size-2 rounded-full bg-primary"></span> Sales
+                Office
               </div>
               <div className="flex items-center gap-1">
                 <span className="size-2 rounded-full bg-primary/40"></span>{" "}
-                {t("map.legend.centers")}
+                Regional Coverage
               </div>
             </div>
           </div>

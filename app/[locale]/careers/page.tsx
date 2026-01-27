@@ -258,15 +258,6 @@ export default function CareersPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-black mb-6">{t("cta.title")}</h2>
-            <p className="text-xl mb-8 text-white/90">{t("cta.subtitle")}</p>
-            <button className="px-10 py-4 bg-white text-primary font-bold rounded-xl hover:shadow-2xl transition-all hover:-translate-y-1">
-              {t("cta.button")}
-            </button>
-          </div>
-        </section>
       </main>
       <Footer />
     </>

@@ -141,7 +141,7 @@ export default async function LocaleLayout({
                 "@type": "ContactPoint",
                 telephone: "+1-713-555-0192",
                 contactType: "Sales",
-                email: "sales@chemdist-global.com",
+                email: "info@chemlinktrading.com",
                 areaServed: "Worldwide",
                 availableLanguage: ["English", "Arabic"],
               },

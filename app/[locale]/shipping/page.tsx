@@ -298,7 +298,7 @@ export default function ShippingPage() {
                   <li>Note any visible damage on delivery receipt</li>
                   <li>Photograph damaged packaging before opening</li>
                   <li>
-                    Report damage within 48 hours to claims@chemdist-global.com
+                    Report damage within 48 hours to info@chemlinktrading.com
                   </li>
                 </ul>
 
@@ -346,7 +346,7 @@ export default function ShippingPage() {
                     For shipping inquiries and tracking assistance:
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Email: logistics@chemdist-global.com
+                    Email: info@chemlinktrading.com
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
                     Phone: +1 (713) 555-0195

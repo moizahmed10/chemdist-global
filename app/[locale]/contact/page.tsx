@@ -56,7 +56,7 @@ export default function ContactPage() {
 
     try {
       const templateParams = {
-        to_email: "sales@chemdist-global.com",
+        to_email: "info@chemlinktrading.com",
         from_name: formData.fullName,
         from_email: formData.email,
         company: formData.company,
@@ -274,7 +274,7 @@ export default function ContactPage() {
               </h3>
               {/* Office Cards */}
               <div className="space-y-3">
-                {/* Houston */}
+                {/* Riyadh */}
                 <div
                   className="p-4 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-gray-800 rounded-xl hover:border-primary transition-colors cursor-pointer group hover-lift animate-scale-in"
                   style={{ animationDelay: "0.1s" }}
@@ -284,10 +284,10 @@ export default function ContactPage() {
                   >
                     <div>
                       <h4 className="font-bold text-primary">
-                        {t("offices.northAmerica.title")}
+                        Regional Sales Office
                       </h4>
                       <p className="text-xs text-[#677e83] font-medium uppercase tracking-wider">
-                        {t("offices.northAmerica.location")}
+                        Riyadh, Saudi Arabia
                       </p>
                     </div>
                     <span className="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">
@@ -303,9 +303,7 @@ export default function ContactPage() {
                       <span className="material-symbols-outlined text-primary text-lg">
                         call
                       </span>
-                      <span className="font-medium">
-                        {t("offices.northAmerica.phone")}
-                      </span>
+                      <span className="font-medium">+966 53 257 1669</span>
                     </div>
                     <div
                       className={`flex ${isRTL ? "flex-row-reverse" : ""} items-center gap-2 text-sm`}
@@ -313,99 +311,7 @@ export default function ContactPage() {
                       <span className="material-symbols-outlined text-primary text-lg">
                         schedule
                       </span>
-                      <span className="font-medium">
-                        {t("offices.northAmerica.hours")}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                {/* Rotterdam */}
-                <div
-                  className="p-4 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-gray-800 rounded-xl hover:border-primary transition-colors cursor-pointer group hover-lift animate-scale-in"
-                  style={{ animationDelay: "0.2s" }}
-                >
-                  <div
-                    className={`flex ${isRTL ? "flex-row-reverse" : ""} justify-between items-start mb-2`}
-                  >
-                    <div>
-                      <h4 className="font-bold text-primary">
-                        {t("offices.europe.title")}
-                      </h4>
-                      <p className="text-xs text-[#677e83] font-medium uppercase tracking-wider">
-                        {t("offices.europe.location")}
-                      </p>
-                    </div>
-                    <span className="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">
-                      {isRTL ? "arrow_back" : "arrow_forward"}
-                    </span>
-                  </div>
-                  <div
-                    className={`flex ${isRTL ? "flex-row-reverse" : ""} gap-6 mt-4`}
-                  >
-                    <div
-                      className={`flex ${isRTL ? "flex-row-reverse" : ""} items-center gap-2 text-sm`}
-                    >
-                      <span className="material-symbols-outlined text-primary text-lg">
-                        call
-                      </span>
-                      <span className="font-medium">
-                        {t("offices.europe.phone")}
-                      </span>
-                    </div>
-                    <div
-                      className={`flex ${isRTL ? "flex-row-reverse" : ""} items-center gap-2 text-sm`}
-                    >
-                      <span className="material-symbols-outlined text-primary text-lg">
-                        schedule
-                      </span>
-                      <span className="font-medium">
-                        {t("offices.europe.hours")}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                {/* Singapore */}
-                <div
-                  className="p-4 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-gray-800 rounded-xl hover:border-primary transition-colors cursor-pointer group hover-lift animate-scale-in"
-                  style={{ animationDelay: "0.3s" }}
-                >
-                  <div
-                    className={`flex ${isRTL ? "flex-row-reverse" : ""} justify-between items-start mb-2`}
-                  >
-                    <div>
-                      <h4 className="font-bold text-primary">
-                        {t("offices.apac.title")}
-                      </h4>
-                      <p className="text-xs text-[#677e83] font-medium uppercase tracking-wider">
-                        {t("offices.apac.location")}
-                      </p>
-                    </div>
-                    <span className="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">
-                      {isRTL ? "arrow_back" : "arrow_forward"}
-                    </span>
-                  </div>
-                  <div
-                    className={`flex ${isRTL ? "flex-row-reverse" : ""} gap-6 mt-4`}
-                  >
-                    <div
-                      className={`flex ${isRTL ? "flex-row-reverse" : ""} items-center gap-2 text-sm`}
-                    >
-                      <span className="material-symbols-outlined text-primary text-lg">
-                        call
-                      </span>
-                      <span className="font-medium">
-                        {t("offices.apac.phone")}
-                      </span>
-                    </div>
-                    <div
-                      className={`flex ${isRTL ? "flex-row-reverse" : ""} items-center gap-2 text-sm`}
-                    >
-                      <span className="material-symbols-outlined text-primary text-lg">
-                        schedule
-                      </span>
-                      <span className="font-medium">
-                        {t("offices.apac.hours")}
-                      </span>
+                      <span className="font-medium">Sun-Thu 9AM-5PM</span>
                     </div>
                   </div>
                 </div>

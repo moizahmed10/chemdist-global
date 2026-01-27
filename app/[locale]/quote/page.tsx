@@ -623,7 +623,7 @@ export default function QuotePage() {
                         call
                       </span>
                       <a
-                        href="tel:+17135550192"
+                        href="tel:+966532571669"
                         className="text-primary hover:underline font-medium"
                       >
                         {t("sidebar.phone")}
@@ -634,7 +634,7 @@ export default function QuotePage() {
                         email
                       </span>
                       <a
-                        href="mailto:sales@chemdist-global.com"
+                        href="mailto:info@chemlinktrading.com"
                         className="text-primary hover:underline font-medium"
                       >
                         {t("sidebar.email")}
