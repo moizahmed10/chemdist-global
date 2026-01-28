@@ -110,8 +110,7 @@ export default function QuotePage() {
   }, [productCategory, allProducts]);
 
   useEffect(() => {
-    document.title =
-      "Request a Quote - Bulk Chemical Pricing | ChemDist Global";
+    document.title = "Request a Quote - Bulk Chemical Pricing | Chemlink";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: {
     default:
       "ChemDist Global | Premium Chemical Distribution & Supply Chain Solutions",
-    template: "%s | ChemDist Global",
+    template: "%s | Chemlink",
   },
   description:
     "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. Delivering premium chemicals with temperature-controlled logistics and 99.8% on-time delivery.",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     "polymer pigments",
     "chemical procurement",
   ],
-  authors: [{ name: "ChemDist Global" }],
-  creator: "ChemDist Global",
-  publisher: "ChemDist Global",
+  authors: [{ name: "Chemlink" }],
+  creator: "Chemlink",
+  publisher: "Chemlink",
   robots: {
     index: true,
     follow: true,
@@ -54,9 +54,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://chemdist-global.com",
-    siteName: "ChemDist Global",
-    title:
-      "ChemDist Global | Premium Chemical Distribution & Supply Chain Solutions",
+    siteName: "Chemlink",
+    title: "Chemlink | Premium Chemical Distribution & Supply Chain Solutions",
     description:
       "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified with 99.8% on-time delivery.",
     images: [
@@ -64,17 +63,17 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "ChemDist Global - Chemical Distribution Excellence",
+        alt: "Chemlink - Chemical Distribution Excellence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChemDist Global | Premium Chemical Distribution",
+    title: "Chemlink | Premium Chemical Distribution",
     description:
       "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments.",
     images: ["/twitter-image.jpg"],
-    creator: "@chemdistglobal",
+    creator: "@chemlink",
   },
   verification: {
     google: "your-google-verification-code",

@@ -23,7 +23,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="text-lg font-extrabold tracking-tight text-primary">
-                ChemDist Global
+                Chemlink
               </span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm max-w-xs mb-6">

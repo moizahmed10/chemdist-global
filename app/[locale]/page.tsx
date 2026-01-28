@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     document.title =
-      "ChemDist Global | Premium Chemical Distribution & Supply Chain Solutions";
+      "Chemlink | Premium Chemical Distribution & Supply Chain Solutions";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(

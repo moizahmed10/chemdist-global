@@ -28,7 +28,7 @@ export default function Header() {
                   </svg>
                 </div>
                 <span className="text-xl font-extrabold tracking-tight text-primary">
-                  ChemDist Global
+                  Chemlink
                 </span>
               </Link>
             </div>
@@ -118,7 +118,7 @@ export default function Header() {
                   </svg>
                 </div>
                 <span className="text-lg font-extrabold tracking-tight text-primary">
-                  ChemDist Global
+                  Chemlink
                 </span>
               </Link>
               <button
