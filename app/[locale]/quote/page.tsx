@@ -205,18 +205,7 @@ export default function QuotePage() {
                             required
                           />
                         </div>
-                        <div className="relative">
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("contact.jobTitle")} *
-                          </label>
-                          <input
-                            type="text"
-                            name="job_title"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            placeholder={t("contact.jobTitlePlaceholder")}
-                            required
-                          />
-                        </div>
+
                         <div className="relative">
                           <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
                             {t("contact.email")} *
@@ -323,67 +312,6 @@ export default function QuotePage() {
                               {t("product.selectCategoryFirst")}
                             </p>
                           )}
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("product.cas")}
-                          </label>
-                          <input
-                            type="text"
-                            name="cas"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            placeholder={t("product.casPlaceholder")}
-                            value={casNumber}
-                            onChange={(e) => setCasNumber(e.target.value)}
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-                            {t("product.application")}
-                          </label>
-                          <select
-                            name="application"
-                            className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all hover:border-gray-300 dark:hover:border-gray-500"
-                            value={application}
-                            onChange={(e) => setApplication(e.target.value)}
-                          >
-                            <option value="">
-                              {t("product.selectApplication")}
-                            </option>
-                            <option value="packaging">
-                              {t("product.packagingSealing")}
-                            </option>
-                            <option value="labeling">
-                              {t("product.labels")}
-                            </option>
-                            <option value="bookbinding">
-                              {t("product.bookbinding")}
-                            </option>
-                            <option value="woodworking">
-                              {t("product.woodworking")}
-                            </option>
-                            <option value="automotive">
-                              {t("product.automotiveAssembly")}
-                            </option>
-                            <option value="electronics">
-                              {t("product.electronicsAssembly")}
-                            </option>
-                            <option value="coatings">
-                              {t("product.coatings")}
-                            </option>
-                            <option value="construction">
-                              {t("product.constructionMaterials")}
-                            </option>
-                            <option value="textiles">
-                              {t("product.textiles")}
-                            </option>
-                            <option value="food industry">
-                              {t("product.foodIndustry")}
-                            </option>
-                            <option value="other">
-                              {t("product.otherApplication")}
-                            </option>
-                          </select>
                         </div>
 
                         <div>

@@ -35,6 +35,12 @@ export default function Header() {
             <nav className="hidden md:flex items-center gap-8">
               <Link
                 className="text-sm font-semibold hover:text-primary transition-colors"
+                href={`/${locale}`}
+              >
+                {t("home")}
+              </Link>
+              <Link
+                className="text-sm font-semibold hover:text-primary transition-colors"
                 href={`/${locale}/catalog`}
               >
                 {t("catalog")}
@@ -126,6 +132,16 @@ export default function Header() {
             {/* Navigation Links */}
             <nav className="flex-1 overflow-y-auto p-4">
               <div className="space-y-2">
+                <Link
+                  href={`/${locale}`}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-semibold"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span className="material-symbols-outlined text-primary">
+                    home
+                  </span>
+                  {t("home")}
+                </Link>
                 <Link
                   href={`/${locale}/catalog`}
                   className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-semibold"

@@ -123,15 +123,6 @@ export default function Home() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <div className="hidden sm:flex items-center gap-2 border-l border-gray-200 dark:border-gray-700 ml-4 pl-4 text-xs font-mono text-gray-400">
-                <span className="px-2 py-1 bg-gray-200 dark:bg-gray-800 rounded">
-                  CMD
-                </span>{" "}
-                +{" "}
-                <span className="px-2 py-1 bg-gray-200 dark:bg-gray-800 rounded">
-                  K
-                </span>
-              </div>
             </div>
           </form>
         </section>

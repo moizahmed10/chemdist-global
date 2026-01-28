@@ -131,22 +131,6 @@ export default function ContactPage() {
             </p>
           </div>
           {/* Emergency Section */}
-          <div className="bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800/30 p-6 rounded-xl w-full lg:max-w-xs animate-pulse-slow">
-            <div className="flex items-center gap-3 text-red-600 dark:text-red-400 mb-2">
-              <span className="material-symbols-outlined font-bold">
-                emergency
-              </span>
-              <span className="font-bold uppercase tracking-wider text-xs">
-                {t("emergency.title")}
-              </span>
-            </div>
-            <p className="text-2xl font-black text-red-700 dark:text-red-300 mb-1">
-              {t("emergency.phone")}
-            </p>
-            <p className="text-xs text-red-600 dark:text-red-400/80 font-medium leading-tight">
-              {t("emergency.description")}
-            </p>
-          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Contact Form */}

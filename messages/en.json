@@ -456,39 +456,35 @@
     },
     "stats": {
       "experience": {
-        "value": "35+",
-        "label": "Years Experience"
+        "value": "Global",
+        "label": "Reach"
       },
       "distributed": {
-        "value": "120k",
-        "label": "Tons Distributed"
+        "value": "High",
+        "label": "Capacity"
       },
       "hubs": {
-        "value": "52",
-        "label": "Global Hubs"
+        "value": "Compliance",
+        "label": "Driven"
       },
       "compliant": {
-        "value": "100%",
-        "label": "REACH Compliant"
+        "value": "Supply",
+        "label": "Precision"
       }
     },
     "journey": {
-      "title": "Our Journey & Mission",
+      "title": "Our Journey and Mission",
       "founded": {
-        "label": "Founded in Houston",
-        "description": "1985 — Started as a local solvent distributor for the Texas oil industry."
+        "label": "Operational Foundation",
+        "description": "Structured systems and controlled sourcing"
       },
       "expanded": {
-        "label": "Expanded to European Markets",
-        "description": "1998 — Opened the Rotterdam hub to bridge transatlantic chemical supply chains."
-      },
-      "certified": {
-        "label": "ISO 9001 & 14001 Certified",
-        "description": "2010 — Standardized all operations under global quality and environmental frameworks."
+        "label": "Market Integration",
+        "description": "Aligned with global trade standards"
       },
       "global": {
-        "label": "Global Logistics Hub Launch",
-        "description": "2023 — Integrated AI-driven tracking across our 52 worldwide distribution centers."
+        "label": "Distribution Network",
+        "description": "Scalable, multi-region logistics"
       }
     },
     "map": {
