@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   title: {
     default:
       "ChemDist Global | Premium Chemical Distribution & Supply Chain Solutions",
-    template: "%s | Chemlink",
+    template: "%s | ChemDist Global",
   },
   description:
-    "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. Delivering premium chemicals with temperature-controlled logistics and 99.8% on-time delivery.",
+    "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. Delivering premium chemicals with temperature-controlled logistics and 99.8% on-time delivery. ISO 9001:2015 certified.",
   keywords: [
     "chemical distribution",
     "hot melt adhesives",
@@ -29,16 +29,21 @@ export const metadata: Metadata = {
     "adhesive supplier",
     "chemical logistics",
     "bulk chemicals",
-
     "industrial chemicals",
     "packaging adhesives",
     "coating resins",
     "polymer pigments",
     "chemical procurement",
+    "specialty chemicals",
+    "chemical supply chain",
+    "temperature-controlled shipping",
+    "ISO 9001 certified chemicals",
+    "global chemical supplier",
+    "chemical wholesaler",
   ],
-  authors: [{ name: "Chemlink" }],
-  creator: "Chemlink",
-  publisher: "Chemlink",
+  authors: [{ name: "ChemDist Global" }],
+  creator: "ChemDist Global",
+  publisher: "ChemDist Global",
   robots: {
     index: true,
     follow: true,
@@ -54,32 +59,33 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://chemdist-global.com",
-    siteName: "Chemlink",
-    title: "Chemlink | Premium Chemical Distribution & Supply Chain Solutions",
+    siteName: "ChemDist Global",
+    title:
+      "ChemDist Global | Premium Chemical Distribution & Supply Chain Solutions",
     description:
-      "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified with 99.8% on-time delivery.",
+      "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified with 99.8% on-time delivery. Temperature-controlled logistics worldwide.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/PNG.png",
         width: 1200,
         height: 630,
-        alt: "Chemlink - Chemical Distribution Excellence",
+        alt: "ChemDist Global - Chemical Distribution Excellence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chemlink | Premium Chemical Distribution",
+    title: "ChemDist Global | Premium Chemical Distribution",
     description:
-      "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments.",
-    images: ["/twitter-image.jpg"],
-    creator: "@chemlink",
-  },
-  verification: {
-    google: "your-google-verification-code",
+      "Leading global chemical distributor specializing in hot melt adhesives, saturated resins, and industrial pigments. ISO 9001:2015 certified.",
+    images: ["/PNG.png"],
   },
   alternates: {
     canonical: "https://chemdist-global.com",
+    languages: {
+      en: "https://chemdist-global.com/en",
+      ar: "https://chemdist-global.com/ar",
+    },
   },
   category: "Industrial Chemicals",
 };

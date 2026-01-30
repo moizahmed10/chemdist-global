@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/admin/"],
+      disallow: ["/api/"],
     },
-    sitemap: "https://www.chemlinktrading.com/sitemap.xml",
+    sitemap: "https://chemdist-global.com/sitemap.xml",
   };
 }
