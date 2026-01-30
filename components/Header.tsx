@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const locale = useLocale();
@@ -17,19 +18,14 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <Link href={`/${locale}`} className="flex items-center gap-3">
-                <div className="text-primary">
-                  <svg
-                    className="w-8 h-8"
-                    fill="currentColor"
-                    viewBox="0 0 48 48"
-                  >
-                    <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
-                  </svg>
-                </div>
-                <span className="text-xl font-extrabold tracking-tight text-primary">
-                  Chemlink
-                </span>
+              <Link href={`/${locale}`} className="flex items-center">
+                <Image
+                  src="/PNG.png"
+                  alt="Chemlink Logo"
+                  width={240}
+                  height={240}
+                  className="h-20 w-auto object-contain"
+                />
               </Link>
             </div>
             <nav className="hidden md:flex items-center gap-8">
