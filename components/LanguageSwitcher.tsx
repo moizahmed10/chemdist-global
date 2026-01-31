@@ -74,7 +74,7 @@ export default function LanguageSwitcher() {
                   : ""
               }`}
             >
-              <span className="text-2xl">�🇦</span>
+              <span className="text-2xl">S🇦</span>
               <div>
                 <div className="font-medium">العربية</div>
                 <div className="text-xs text-gray-500 dark:text-gray-400">
