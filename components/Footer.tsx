@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Footer() {
   const locale = useLocale();
@@ -12,20 +13,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="text-primary">
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 48 48"
-                >
-                  <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
-                </svg>
-              </div>
-              <span className="text-lg font-extrabold tracking-tight text-primary">
-                Chemlink
-              </span>
-            </div>
+            <Link href={`/${locale}`} className="flex items-center mb-6 w-fit">
+              <Image
+                src="/PNG.png"
+                alt="Chemlink Logo"
+                width={240}
+                height={240}
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
             <p className="text-gray-500 dark:text-gray-400 text-sm max-w-xs mb-6">
               {t("description")}
             </p>

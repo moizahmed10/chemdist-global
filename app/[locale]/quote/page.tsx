@@ -37,31 +37,39 @@ export default function QuotePage() {
 
     try {
       const formData = new FormData(e.currentTarget);
-      const result = await emailjs.send("service_default", "template_default", {
-        from_email: formData.get("email"),
-        from_name: formData.get("fullName"),
-        company_name: formData.get("company"),
-        phone: formData.get("phone"),
-        product_name: formData.get("product"),
-        product_category: formData.get("category"),
-        cas_number: formData.get("cas"),
-        application: formData.get("application"),
-        quantity: formData.get("quantity"),
-        quantity_unit: formData.get("quantity_unit"),
-        packaging: formData.get("packaging"),
-        frequency: formData.get("frequency"),
-        delivery_date: formData.get("delivery_date"),
-        country: formData.get("country"),
-        city: formData.get("city"),
-        address: formData.get("address"),
-        notes: formData.get("notes"),
-        required_docs: Array.from(
-          e.currentTarget.querySelectorAll('input[type="checkbox"]:checked'),
-        )
-          .map((el: any) => el.value)
-          .join(", "),
-        locale: locale,
-      });
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_QUOTE || "",
+        {
+          to_email: "info@chemlinktrading.com",
+          from_email: formData.get("email"),
+          from_name: formData.get("fullName"),
+          company_name: formData.get("company"),
+          phone: formData.get("phone"),
+          product_name: productName,
+          product_category: productCategory,
+          cas_number: casNumber,
+          application: application,
+          quantity: formData.get("quantity") || "Not specified",
+          quantity_unit: formData.get("quantity_unit") || "Not specified",
+          packaging: formData.get("packaging") || "Not specified",
+          frequency: formData.get("frequency") || "Not specified",
+          delivery_date: formData.get("delivery_date") || "Not specified",
+          country: formData.get("country"),
+          city: formData.get("city"),
+          address: formData.get("address") || "Not provided",
+          notes: formData.get("notes") || "No additional notes",
+          required_docs:
+            Array.from(
+              e.currentTarget.querySelectorAll(
+                'input[type="checkbox"]:checked',
+              ),
+            )
+              .map((el: any) => el.value)
+              .join(", ") || "None selected",
+          locale: locale,
+        },
+      );
 
       setSubmitMessage({ type: "success", text: t("success") });
       e.currentTarget.reset();
@@ -369,6 +377,7 @@ export default function QuotePage() {
                             <option value="fr">{t("delivery.fr")}</option>
                             <option value="nl">{t("delivery.nl")}</option>
                             <option value="sg">{t("delivery.sg")}</option>
+                            <option value="sa">{t("delivery.sa")}</option>
                             <option value="cn">{t("delivery.cn")}</option>
                             <option value="other">{t("delivery.other")}</option>
                           </select>

@@ -178,3 +178,134 @@ Once EmailJS is configured:
 2. Monitor email delivery in EmailJS dashboard
 3. Set up additional email templates if needed
 4. Configure email forwarding for team collaboration
+
+CONTACT FORM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .field {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .field:last-of-type {
+            border-bottom: none;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #2563eb;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            color: #333;
+            font-size: 14px;
+        }
+        .message-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .inquiry-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .footer {
+            background-color: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>New Contact Form Submission</h1>
+        </div>
+        
+        <div class="content">
+            <div class="field">
+                <div class="field-label">Full Name</div>
+                <div class="field-value">{{from_name}}</div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Email Address</div>
+                <div class="field-value"><a href="mailto:{{from_email}}">{{from_email}}</a></div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Company</div>
+                <div class="field-value">{{company}}</div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Inquiry Type</div>
+                <div class="field-value">
+                    <span class="inquiry-badge">{{inquiry_type}}</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Message</div>
+                <div class="message-box">
+                    {{message}}
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Language</div>
+                <div class="field-value">{{locale}}</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Received via Chemlink Trading Contact Form</p>
+        </div>
+    </div>
+
+</body>
+</html>
