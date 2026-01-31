@@ -369,17 +369,12 @@ export default function QuotePage() {
                             <option value="">
                               {t("delivery.selectCountry")}
                             </option>
-                            <option value="us">{t("delivery.us")}</option>
-                            <option value="ca">{t("delivery.ca")}</option>
-                            <option value="mx">{t("delivery.mx")}</option>
-                            <option value="uk">{t("delivery.uk")}</option>
-                            <option value="de">{t("delivery.de")}</option>
-                            <option value="fr">{t("delivery.fr")}</option>
-                            <option value="nl">{t("delivery.nl")}</option>
-                            <option value="sg">{t("delivery.sg")}</option>
+                            <option value="bh">{t("delivery.bh")}</option>
+                            <option value="kw">{t("delivery.kw")}</option>
+                            <option value="om">{t("delivery.om")}</option>
+                            <option value="qa">{t("delivery.qa")}</option>
                             <option value="sa">{t("delivery.sa")}</option>
-                            <option value="cn">{t("delivery.cn")}</option>
-                            <option value="other">{t("delivery.other")}</option>
+                            <option value="ae">{t("delivery.ae")}</option>
                           </select>
                         </div>
 
