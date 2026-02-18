@@ -37,11 +37,11 @@ export default function TermsPage() {
                   1. Acceptance of Terms
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  By accessing or using Chemlink Trading's services, you agree to
-                  be bound by these Terms of Service. These terms apply to all
-                  users, including customers, vendors, and visitors. If you do
-                  not agree with any part of these terms, you may not access our
-                  services.
+                  By accessing or using Chemlink Trading's services, you agree
+                  to be bound by these Terms of Service. These terms apply to
+                  all users, including customers, vendors, and visitors. If you
+                  do not agree with any part of these terms, you may not access
+                  our services.
                 </p>
               </section>
 
