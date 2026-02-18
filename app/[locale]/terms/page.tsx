@@ -37,7 +37,7 @@ export default function TermsPage() {
                   1. Acceptance of Terms
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  By accessing or using ChemDist Global's services, you agree to
+                  By accessing or using Chemlink Trading's services, you agree to
                   be bound by these Terms of Service. These terms apply to all
                   users, including customers, vendors, and visitors. If you do
                   not agree with any part of these terms, you may not access our
@@ -206,7 +206,7 @@ export default function TermsPage() {
                   7.2 Limitation of Liability
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  ChemDist Global's liability is limited to the purchase price
+                  Chemlink Trading's liability is limited to the purchase price
                   of the product. We are not liable for consequential,
                   incidental, or indirect damages including loss of profits,
                   business interruption, or personal injury resulting from
@@ -220,7 +220,7 @@ export default function TermsPage() {
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   All content on this website including text, graphics, logos,
-                  and technical data is owned by ChemDist Global and protected
+                  and technical data is owned by Chemlink Trading and protected
                   by copyright. Customers may not reproduce, distribute, or
                   create derivative works without written permission.
                 </p>
@@ -256,7 +256,7 @@ export default function TermsPage() {
                     Phone: +1 (713) 555-0198
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mt-4">
-                    ChemDist Global Distribution Inc.
+                    Chemlink Trading Distribution Inc.
                     <br />
                     1450 Energy Corridor, Suite 200
                     <br />

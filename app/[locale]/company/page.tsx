@@ -59,7 +59,7 @@ export default function CompanyPage() {
             <p className="text-primary text-3xl font-black">
               {t("stats.experience.value")}
             </p>
-            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wider">
+            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wide break-words">
               {t("stats.experience.label")}
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function CompanyPage() {
             <p className="text-primary text-3xl font-black">
               {t("stats.distributed.value")}
             </p>
-            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wider">
+            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wide break-words">
               {t("stats.distributed.label")}
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function CompanyPage() {
             <p className="text-primary text-3xl font-black">
               {t("stats.hubs.value")}
             </p>
-            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wider">
+            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wide break-words">
               {t("stats.hubs.label")}
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function CompanyPage() {
             <p className="text-primary text-3xl font-black">
               {t("stats.compliant.value")}
             </p>
-            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wider">
+            <p className="text-[#677e83] dark:text-gray-400 text-sm font-medium uppercase tracking-wide break-words">
               {t("stats.compliant.label")}
             </p>
           </div>
